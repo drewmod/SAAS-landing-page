@@ -5,106 +5,227 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
-    <title>Vivek Chudasama</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v6.1.2/js/all.js"
+        integrity="sha384-11X1bEJVFeFtn94r1jlvSC7tlJkV2VJctorjswdLzqOJ6ZvYBSZQkaQVXG0R4Flt"
+        crossorigin="anonymous"></script>
+
+    <title>SASS Landing Page</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="./assets/Logo.png" alt="Logo">
-            </div>
 
-            <ul class="nav-items">
-                <li>Home</li>
-                <li>Services</li>
-                <li>Pricing</li>
-                <li>Testimonials</li>
-                <li>Blog</li>
-                <li><a href="#">FREE TRIAL</a></li>
-            </ul>
-        </nav>
+    <header class="header">
 
-        <div class="head-main">
-            <div class="main-left">
-                <h1>Codext one of the best in SAAS</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt iure corporis nisi, tempora
-                    totam similique provident expedita.</p>
-            </div>
+        <div class="container">
 
-            <div class="main-right">
-                <img src="./assets/30495 [Converted]-01(1).svg">
+
+            <div class="navbar">
+
+                <div class="page-logo">
+                    <img src="./assets/Logo.png" alt="Logo" class="brand-logo">
+                </div>
+
+                <nav>
+                    <ul class="nav-lists">
+                        <li class="list-item">
+                            <a href="#" class="list-link nav-list">Home</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-link">Services</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-link">Pricing</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-link">Testimonials</a>
+                        </li>
+                        <li class="list-item blog">
+                            <a href="#" class="list-link">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="btn-container">
+                    <button class="btn">FREE TRIAL</button>
+                </div>
+
             </div>
         </div>
+
     </header>
 
-    <main>
-        <div class="top">
-            <div class="img">
-                <img src="./assets/Saas illustration-01.svg" alt="">
+    <section id="caption-heading">
+
+        <div class="container">
+
+            <div class="container-content">
+
+                <div class="container-text">
+                    <div class="caption-head">
+                        <h2>
+                            Codext is one of <br> the best systems <br> in SAAS
+                        </h2>
+                    </div>
+                    <div class="caption-desc">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. A nulla nulla etlam turpis
+                            quam
+                            diam et. <br> Arcu nisi, sed aenean sit nisl.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="caption-image-container">
+                    <img src="./assets/30495 [Converted]-01.svg" alt="SASS" class="caption-image">
+                </div>
+
             </div>
 
-            <div class="about">
-                <h1>It's helpful for operating system</h1>
-                <div class="card">
-                    <p><i class="orange fa-solid fa-share"></i> Ultra fast & Secure</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate praesentium hic quam quod,
-                        maiores ullam voluptas?</p>
-                </div>
-                <div class="card">
-                    <p><i class="green fa-solid fa-share"></i> Allow customization</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni asperiores dolores culpa, suscipit
-                        nemo perspiciatis ratione?</p>
-                </div>
-                <div class="card">
-                    <p><i class="blue fa-solid fa-share"></i> Smart Contract</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tenetur dolorem eius rerum
-                        mollitia! Vitae, veniam.</p>
-                </div>
-            </div>
         </div>
 
-        <div class="bottom">
-            <h1>We provide best feature <br> for Customer</h1>
-            <div class="feature-cards">
-                <div class="feature-card">
-                    <img src="assets/web-developing.svg" alt="web">
-                    <div class="content">
-                        <h1>Clean Code </h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nobis.</p>
-                    </div>
-                </div>
-
-                <div class="feature-card">
-                    <img src="./assets/data-analytics.svg" alt="data">
-                    <div class="content">
-                        <h1>Data Analytics</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, animi.</p>
-                    </div>
-                </div>
-
-                <div class="feature-card">
-                    <img src="./assets/secured-profile.svg" alt="secure">
-                    <div class="content">
-                        <h1>Fully Secured</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, fugiat.</p>
-                    </div>
-                </div>
-
-                <div class="feature-card">
-                    <img src="./assets/support.svg" alt="support">
-                    <div class="content">
-                        <h1>24/7 Support</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, maxime!</p>
-                    </div>
-                </div>
-            </div>
         </div>
-    </main>
+
+    </section>
+
+    <div class="container">
+
+        <section class="info">
+
+            <div class="col-wrapper">
+
+                <div class="col-1">
+
+                    <div class="info-image-wrapper">
+                        <img src="./assets/Saas illustration-01.svg" alt="SASS" class="info-image">
+                    </div>
+
+                </div>
+
+                <div class="col-2">
+
+                    <div class="info-heading">
+                        <h3>
+                            It's helpful for operating <br> systems
+                        </h3>
+                    </div>
+
+                    <div class="info">
+
+                        <div class="info-heading">
+                            <h4>
+                                <i class="fa-solid fa-share share-1"></i>
+                                Ultra fast & secure
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eisumod tempor
+                            </p>
+                        </div>
+
+                        <div class="info-heading">
+                            <h4>
+                                <i class="fa-solid fa-share share-2"></i> Allow customization
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eisumod tempor
+                            </p>
+                        </div>
+
+                        <div class="info-heading">
+                            <h4>
+                                <i class="fa-solid fa-share share-3"></i>
+                                Smart Contact
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eisumod tempor
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="footer">
+
+            <div class="footer-heading">
+                <h3>
+                    We Provide Best info-heading <br> For Customer
+                </h3>
+            </div>
+
+            <div class="footer-footer-cards">
+
+                <div class="footer-card">
+
+                    <div class="footer-card-image brown">
+                        <img src="assets/web-developing.svg" alt="Web-Developing Svg" class="card-image">
+                    </div>
+
+                    <div class="card-info color-card">
+                        <h4>
+                            Clean Code
+                        </h4>
+                        <p>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</p>
+                    </div>
+
+                </div>
+
+                <div class="footer-card">
+
+                    <div class="footer-card-image orange">
+                        <img src="./assets/data-analytics.svg" alt="Web-Developing Svg" class="card-image">
+                    </div>
+
+                    <div class="card-info">
+                        <h4>
+                            Data Analytics
+                        </h4>
+                        <p>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</p>
+                    </div>
+
+                </div>
+
+                <div class="footer-card">
+
+                    <div class="footer-card-image green">
+                        <img src="./assets/secured-profile.svg" alt="Web-Developing Svg" class="card-image">
+                    </div>
+
+                    <div class="card-info">
+                        <h4>
+                            Fully Secured
+                        </h4>
+                        <p>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</p>
+                    </div>
+
+                </div>
+
+                <div class="footer-card">
+
+                    <div class="footer-card-image purple">
+                        <img src="./assets/support.svg" alt="Web-Developing Svg" class="card-image">
+                    </div>
+
+                    <div class="card-info">
+                        <h4>
+                            24/7 Support
+                        </h4>
+                        <p>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
 </body>
 
 </html>
